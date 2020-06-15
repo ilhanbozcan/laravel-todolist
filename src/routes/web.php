@@ -15,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('course','CourseController@index') ->name('courseGet');
 Route::get('courseInsert','CourseController@courseInsert')->name('courseInsert');
+
 Route::post('courseInsertPost','CourseController@courseInsertPost')->name('courseInsertPost');
+
+Route::get('courseUpdate/{id}','CourseController@courseUpdate')->name('courseUpdate');
+Route::post('courseUpdatePost/{id}','CourseController@courseUpdatePost')->name('courseUpdatePost');
+Route::get('courseDelete/{id}','CourseController@courseDelete')->name('courseDelete');
 
 
 
